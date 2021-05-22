@@ -1,0 +1,287 @@
+body {
+  background-color: #e0e0e0;
+  font-size: 1rem;
+}
+
+.wrapper__page {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header style start */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 10px 0;
+  margin-top: 10px;
+  border-bottom: 8px solid #a12324;
+}
+
+.logo__txt span {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 1px white;
+}
+
+.logo__txt :first-child {
+  color: #a12324;
+}
+
+.logo__txt :last-child {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.logo p:last-child {
+  color: #a12324;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav {
+  flex-basis: 65%;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: black;
+  text-shadow: 2px 2px 1px white;
+}
+
+/* Header style end */
+
+/* Main style start */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.main__primary {
+  flex-basis: 80%;
+}
+
+.info__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.info__txt b {
+  font-weight: bold;
+}
+
+.info__txt i {
+  font-style: italic;
+}
+
+.info__txt a {
+  color: #a12324;
+}
+
+.gallery__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.gallery__img {
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  border: 5px solid gray;
+}
+
+.secondary__bar {
+  border: 1px solid gray;
+}
+
+.secondary__bar:not(:first-child) {
+  border-top: none;
+}
+
+.secondary__bar input,
+.group-content {
+  display: none;
+}
+
+.group-title {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 10px 10px 0;
+  cursor: pointer;
+}
+
+.group-content {
+  padding: 10px;
+}
+
+.group-title::before {
+  content: "\02C3";
+  padding: 0 10px;
+}
+
+.secondary__bar :checked + .group-title::before {
+  content: "\02C5";
+}
+
+.secondary__bar :checked ~ .group-content {
+  display: block;
+}
+
+/* Main style end */
+
+/* Object style start */
+
+.object {
+  display: flex;
+  justify-content: space-between;
+}
+
+.object__primary {
+  flex-basis: 80%;
+}
+
+.object__secondary {
+  flex-basis: 20%;
+}
+
+.object__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.object__lists-wrapper {
+  display: flex;
+}
+
+.object__lists {
+  padding: 20px;
+}
+
+.object__table-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.object__list-title {
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.object__lists-wrapper :first-child .object__list {
+  list-style-type: disc;
+}
+
+.object__lists-wrapper :nth-child(2) .object__list {
+  list-style-type: decimal;
+}
+
+.object__lists-wrapper :last-child .object__list :nth-child(even) {
+  font-weight: bold;
+}
+
+.object__lists-wrapper :last-child .object__list :nth-child(odd) {
+  font-style: italic;
+}
+
+.object__table tr,
+th {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  padding: 8px;
+  background-color: white;
+  text-align: left;
+}
+
+.object__table tr:first-child th {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.object__side {
+  border: 1px solid #a12324;
+}
+
+.object__side-title {
+  font-size: 1.1rem;
+  color: white;
+  background-color: #a12324;
+}
+
+.object__side-title,
+.object__side-txt,
+.object__side-link {
+  padding: 10px;
+}
+
+.object__side-link {
+  display: block;
+  font-size: 1.2rem;
+  color: #a12324;
+  text-align: end;
+}
+
+
+/* Object style end */
+
+/* Forms style start */
+
+.forms__title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.forms__text {
+  margin: 5px 0;
+}
+.select {
+  width: 200px;
+  height: 25px;
+  margin: 10px 0;
+  background-image: url(../img/dropdown.png);
+  background-repeat: no-repeat;
+  background-position: right 1.5% top 43%, 0 0;
+  background-size: 6%;
+}
+
+.forms__txt {
+  display: inline-block;
+}
+
+input {
+  margin: 10px 0;
+}
+
+.forms__button {
+  padding: 5px 10px;
+  background-color: #a12324;
+  color: white;
+}
+
+/* Forms style end */
+
+/* Footer style start */
+
+.footer {
+  margin: 20px 0;
+}
+
+.footer__link {
+  font-size: 1.2rem;
+  color: #a12324;
+}
+
+/* Footer style end */
