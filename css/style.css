@@ -57,6 +57,10 @@ body {
   text-shadow: 2px 2px 1px white;
 }
 
+.nav__item:hover .nav__link {
+  color: #a12324;
+}
+
 /* Header style end */
 
 /* Main style start */
@@ -232,7 +236,6 @@ th {
   color: #a12324;
   text-align: end;
 }
-
 
 /* Object style end */
 
